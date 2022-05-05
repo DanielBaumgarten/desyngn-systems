@@ -10,23 +10,11 @@ import { useState } from 'react';
 
 const steps = [
   {
-    label: 'Select campaign settings',
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
-  },
+    label: 'Setup Junior'},
   {
-    label: 'Create an ad group',
-    description:
-      'An ad group contains one or more ads which target a shared set of keywords.',
-  },
+    label: 'Setup Pleno'},
   {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
-  },
+    label: 'Setup Senior'},
 ];
 
 export default function VerticalLinearStepper() {
@@ -59,7 +47,40 @@ export default function VerticalLinearStepper() {
               {step.label}
             </StepLabel>
             <StepContent>
-              <Typography>{step.description}</Typography>
+            <form>
+                {activeStep === 0 &&
+                   <>
+                        <img 
+                            src='https://i.pinimg.com/originals/7b/15/68/7b1568d069c17c83493557d536858343.jpg' 
+                            alt="pic"
+                        />
+                        <input type="text" placeholder='Opine sobre este setup' /> <br></br>
+                        <input type="number" placeholder='Dê sua nota de 0 a 10' />
+                    </>
+                }
+                {activeStep === 1 &&
+                    <>
+                        <img 
+                            src='https://i.ytimg.com/vi/MVzZ68TlecM/maxresdefault.jpg' 
+                            alt="pic"
+                        />
+                        <input type="text" placeholder='Opine sobre este setup' /> <br></br>
+                        <input type="number" placeholder='Dê sua nota de 0 a 10' />
+                    </>
+                }   
+                
+                {activeStep === 2 &&
+                    <>
+                        <img 
+                            src='https://i.ytimg.com/vi/ur3YjN7a8Qw/maxresdefault.jpg' 
+                            alt="pic"
+                        />
+                        
+                        <input type="text" placeholder='Opine sobre este setup' /> <br></br>
+                        <input type="number" placeholder='Dê sua nota de 0 a 10' />
+                    </>
+                }
+            </form>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
