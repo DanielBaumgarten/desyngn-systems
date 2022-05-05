@@ -1,0 +1,20 @@
+.input-email{
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 300px;
+    padding: 0 10px
+}
+
+.btn-red {
+    background-color: rgb(10, 9, 9);
+    color: white;
+    height: 48px;
+    width: 300px;
+    border:none
+}
+
+.btn-red:hover{
+    opacity: 0.3
+}
+
