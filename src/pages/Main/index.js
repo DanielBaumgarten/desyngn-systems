@@ -6,6 +6,7 @@ import CustomAutoComplete from '../../components/CustomAutoComplete'
 import CustomSteper from '../../components/CustomSteper'
 import AddUserDialog from '../../components/AddUserDialog'
 import {useState} from 'react';
+import Loading from '../../components/Loading'
 
 function Main() {
   
@@ -21,6 +22,7 @@ function Main() {
 
   return (
     <div className="container-main">      
+    <Loading />
       <Button 
         variant="contained"
         onClick={handleClickOpen}        
