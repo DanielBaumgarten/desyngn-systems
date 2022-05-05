@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { purple } from '@mui/material/colors';
 
 export const BootstrapButton = styled(Button)({
-  height: 60,
+  height: 50,
   width: 150,
   '&:hover': {
     opacity: 0.1

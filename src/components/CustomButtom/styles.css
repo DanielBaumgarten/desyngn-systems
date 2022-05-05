@@ -6,9 +6,9 @@
     padding: 0 10px
 }
 
-.btn-red {
-    background-color: rgb(10, 9, 9);
-    color: white;
+.btn-red{
+    background-color: rgb(194, 32, 194) !important;
+    color: white !important;
     height: 48px;
     width: 300px;
     border:none

@@ -15,7 +15,9 @@ export default function CustomButtom() {
         placeholder='Email' 
         className='input-email'
        />
-       <Button className='btn-red' variant='contained'
+       <Button 
+        className='btn-red'
+        sx={{fontSize:18}}
        > 
          Meu Botao
        </Button>
