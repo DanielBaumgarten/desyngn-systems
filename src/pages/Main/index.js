@@ -1,9 +1,10 @@
 import './styles.css';
+import CustomCard from '../../components/CustomCard'
 
 function Main() {
   return (
     <div className="container-main">
-     <h1>Hello World</h1>
+     <CustomCard />
     </div>
   );
 }
